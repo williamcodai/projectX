@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css' ) }}">
+    <title>PROJECT X</title>
+</head>
+<body>
+    <div class="isi">
+
+        <header>
+            <h1>ADMIN PAGE</h1>
+            <a href="{{ url_for('admin' ) }}">  Input🎇  </a> <br><a href="{{ url_for('tampil' ) }}">  Tampil🔍  </a><br> <a href="{{ url_for('logout' ) }}">LOGOUT🐱‍🏍</a>
+        </header>
+    </div>
+    
+    <br>
+    {% block konten %}   
+    {% endblock %}
+</body>
+</html>
